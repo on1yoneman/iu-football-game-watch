@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>window.__HATCHABLE__&&(window.__HATCHABLE__.primaryOrigin="https://iu-football-game.hatchable.site");</script>
+<script>window.__HATCHABLE__={"slug":"iu-football-game","api":"/api","primaryOrigin":"https://iu-football-game.hatchable.site"};</script><script src="/__hatchable/config.js?v=2"></script><script src="/__hatchable/badge.js?v=2" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#990000">
+<title>IU Football Game Watch</title>
+<style>
+:root{--crimson:#990000;--cream:#f7f4f1;--paper:#fff;--ink:#171717;--muted:#6b6865;--line:#e5dfda;--soft:#f1ece7;--gold:#9a6b00;--shadow:0 8px 24px rgba(22,18,16,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body{padding-bottom:26px}
+.candy{height:12px;background-image:url("data:image/webp;base64,UklGRjIBAABXRUJQVlA4ICYBAAAwEgCdASrwAKAAPpVEnUqlo6KhqMgAsBKJY27hbyDTwAfkB783teAfkBwgR37u0oqDzo8DDwRzKXA6dViRfDRqxHwdI2TF1FNWxguVsvwF8CzzRKeOgrDaVjsX3XotKgmMf4XXz0+0Yvl6i8MDr/5HYRTKjksQ4nDcowSExEyx/IvuvLQkJiJlj+RfdeoSVBMY/wuvnp9oxe8AAP78rB8Qw1fVnZDlKrwE4gWrYLP5Oq6dn8P+T2ycj6zW2te+3P+GTPDesBL7N20cFrspPw5/v3nV67KIP0XDZv/jY8HLoxDDWf3BN7AHCRl+MwTGsihvVkyTEol8QV89Psxz3WSol+DVH3LYNmtltHZYT8Ztqs5yecwi4GMWE/GbannnXeAY62vsgAA=");background-size:180px 120px;background-position:center}
+header{position:sticky;top:0;z-index:50;background:var(--crimson);color:white;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.head-inner{display:flex;align-items:center;gap:12px;padding:12px 16px 10px}
+.brand-logo{width:62px;height:46px;border-radius:10px;background:#fff;object-fit:contain;padding:3px;display:block;flex:0 0 auto}
+.brand{min-width:0;flex:1}
+.brand h1{font-size:17px;line-height:1.05;margin:0 0 4px;font-weight:850}
+.brand p{font-size:12px;margin:0;opacity:.87;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.game-chip{font-size:11px;font-weight:850;background:#1d1d1d;padding:7px 9px;border-radius:999px;white-space:nowrap}
+.top-tabs{padding:0 12px 10px}
+.tabs{max-width:760px;margin:auto;display:flex;gap:7px;overflow-x:auto;padding-bottom:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
+.tab{display:block;text-align:center;text-decoration:none;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.14);color:white;border-radius:11px;padding:10px 12px;font-size:13px;font-weight:850;min-width:92px;flex:0 0 auto}
+main{max-width:760px;margin:0 auto;padding:14px 12px 28px}
+.panel{display:none}
+#offense{display:block}
+.panel:target{display:block}
+#roster:has(.jump-anchor:target){display:block}
+#defense:target ~ #offense,#injuries:target ~ #offense,#roster:target ~ #offense,#schedule:target ~ #offense,#roster:has(.jump-anchor:target) ~ #offense{display:none}
+.notes{display:grid;gap:7px}.note{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 11px;font-size:12px;line-height:1.35}.note strong{color:var(--crimson)}.stats-shell{display:grid;gap:9px}.stats-list{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}.stat-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 12px;border-top:1px solid var(--line)}.stat-row:first-child{border-top:0}.stat-label{font-size:10px;font-weight:900;letter-spacing:.06em;color:var(--crimson);text-transform:uppercase}.stat-player{font-size:13px;font-weight:850;margin-top:2px}.stat-detail{font-size:10px;color:var(--muted);margin-top:2px}.stat-number{font-size:17px;font-weight:900;text-align:right;white-space:nowrap}.team-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.metric{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 11px}.metric strong{display:block;font-size:18px;line-height:1;color:var(--crimson);margin-bottom:4px}.metric span{font-size:10px;line-height:1.25;color:var(--muted)}
+.notice{background:#fff;border:1px solid var(--line);border-left:5px solid var(--crimson);border-radius:14px;padding:11px 12px;margin-bottom:12px;box-shadow:var(--shadow)}
+.notice strong{font-size:12px;display:block;margin-bottom:3px}
+.notice span{font-size:12px;color:var(--muted)}
+.section-title{display:flex;align-items:end;justify-content:space-between;margin:10px 2px 8px}
+.section-title h2{font-size:15px;margin:0;font-weight:850}
+.section-title small{font-size:11px;color:var(--muted)}
+.depth{display:grid;gap:8px}
+.depth-card{display:grid;grid-template-columns:52px 1fr;gap:10px;background:white;border:1px solid var(--line);border-radius:14px;padding:11px 12px;box-shadow:0 2px 10px rgba(0,0,0,.035)}
+.pos{font-size:11px;font-weight:900;color:var(--crimson);letter-spacing:.04em;padding-top:2px}
+.starter{font-size:16px;font-weight:850;line-height:1.16}
+.snap-pct{font-size:9px;font-weight:800;color:var(--muted);white-space:nowrap;margin-left:4px;vertical-align:2px}
+.subrow .snap-pct{margin-left:3px;vertical-align:1px}
+.subrow{display:flex;gap:8px;align-items:flex-start;margin-top:6px;font-size:12px;line-height:1.28}
+.label{font-size:9px;font-weight:900;letter-spacing:.08em;color:var(--muted);background:var(--soft);padding:3px 5px;border-radius:5px;flex:0 0 auto}
+.rotation{color:var(--muted)}
+.status{display:inline-flex;align-items:center;font-size:9px;font-weight:900;border-radius:999px;padding:3px 6px;margin-left:6px;vertical-align:2px}
+.status.D2D,.status.TBD,.status.CLOSE{background:#f7edcf;color:#765300}
+.status.OUT{background:#fae2df;color:#9b1c12}
+.special-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.special-card{background:#181818;color:white;border-radius:13px;padding:10px 11px}
+.special-card .pos{color:#ffb4b4}
+.special-card .starter{font-size:14px}
+.special-card .subrow{color:#d6d6d6}
+.injury-list{display:grid;gap:7px}
+.injury{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 11px}
+.injury-top{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13px;font-weight:800}
+.injury p{font-size:11px;color:var(--muted);margin:5px 0 0;line-height:1.35}
+.jumpbar{position:sticky;top:132px;z-index:20;display:flex;gap:6px;overflow-x:auto;padding:6px 0 10px;background:linear-gradient(var(--cream) 78%,rgba(247,244,241,0));-webkit-overflow-scrolling:touch}
+.jumpbar a{text-decoration:none;white-space:nowrap;background:#fff;border:1px solid var(--line);color:var(--crimson);font-size:11px;font-weight:850;padding:8px 10px;border-radius:999px}
+.roster{display:grid;gap:7px}
+.player-row{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;background:white;border:1px solid var(--line);border-radius:12px;padding:9px 10px}
+.number{width:38px;height:38px;border-radius:10px;background:var(--crimson);color:white;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900}
+.pname{font-size:14px;font-weight:850;line-height:1.1}.pname a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(153,0,0,.22)}.pname a:active{color:var(--crimson)}
+.pmeta{font-size:11px;color:var(--muted);margin-top:4px}
+.ppos{font-size:11px;font-weight:900;color:var(--crimson);text-align:right}
+.jump-anchor{scroll-margin-top:180px}
+.schedule-hero{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:12px;box-shadow:var(--shadow)}
+.schedule-hero:after{content:"";position:absolute;right:-8px;top:2px;width:120px;height:120px;background:url("data:image/webp;base64,UklGRvAEAABXRUJQVlA4IOQEAAAwGwCdASq0AHgAPpVKoUulpKOhpRiJMLASiWNu3V/A/f6e+rt4H8vQ/tnfMb5un+c6gD+n9Rr6AH6u+md7K/7g5SqGt/G5yjeUuHcL2lKx+ei7nweo/YMGQvTiMxeK8vcfeBCFAYInZCst2OycnDpT0uq3YmqBUad8w6DkUpVdo0aaed3vOWWC6FjfkdidEoMhFcNpl+3wA557xzHr/PLVcRZ+beQ7yMYwnV2sh0MBAUC5CbMeTwh5BNjWk3Gyw7HRuN2tzClTEiJFUpqzTtgjF2loJTUiHnUHP1RxiViTBxk4AP75QBS2qpCuKK++c8wRvcIl9NW0JZE2kpJgCsN8MP/IQVEyiGeCumWh6kmjn/s24fC5aEgicJpdUq+PhXlosMrcrLflUDrUMeSSTIvzzXfNkV/NM2A2xy/rpmsaSfbEktqZL8b6PEKaJ7qJQSbmit00w3PmfPnea60jkm/WhRWGsKrag9wBhhpzM8q4Xe0Obm1kJ5upoBBVxQKnpWFVVnA3s7AB9S84JXUTeUgfn9KE4xukfYnA+rXEIBbzPf9Hxioxjb7/xL7ay2riwGiSFTOG4sj/hvDZ3rwAs+rRDmLDH+9XyELCV1PQ33p1Wj2vpevIriDvQz04jsLz9t5xmB5lLj3p+Lr5NEE5ViHN/3PJjacgABD6tOMZU7fXCJ5eSs9JycaPwet2m6/3L2x2ZP++FESFy1KtvXE5XxrW8Idr8uPPX2eiDYg33y75SYumgWarfV8xUq7eKQcrdp5bCaobidvOoC6zQxatuF+gRVA2ELyYNzf9+UvM9d39Mbjeg83czogiV3g4hNIHe1M/wUrgRYXQU35ARG2/M3Ue5hmaVzRx1Ac+j5h/huC3NFNa+URgoH0NVRfp+tJebjDw5Zg89vNmOCR+K5dEGwlwGSALExolNntykGTYvjkY78bIMwBhlJHo5RpJ/gAMm+VL6wTuSnVMVgSyhPc90vFOZTWDXnidgpZrSjjlNbZsyzNmoJS7WJYfajyR+KpVjrqlpj96RDA8Cz0V8ztEiIvAZi53DoutWU8BzLJSrRalyBBRweZrbbS20j6MVr4UUGwincw4KbCG0qumiaRLSMSTD7mWVXj9MD+PuOSIpCnRM0oDhhEKjts5qVp6NMQSz4938jrOthQrka1aQBGOQuLO6x79nelsdf2LjvizBtF0v7txibuwPUerl8ua5biYTPPHvBrmC8+b2QYFkU7fCXfljFz9U3rFQnGbeqZn7n5Zuag4PhA2kJFOCWHW3BPmO1gq/VTrCCPEf8kj+K4b1tILPpevlFuC/CXMosKXcuhm5vaAQUb9syYSGCeyehZdaz/y26ux9Qc399ZK/ScTbzXtoFMZ7/uB8qkwi9CwbstuDyiE76OeFBQWokkOkhcBxMBZJNi9OPs936xEe1s0p4Q/qHVzpt9kQM5b2T36fcLIDpGtCDPpaCsDgJAFNy8RVSeHVwAvt8NeiQ5FqaKaHp6S/Ifl9pRIXXjbzYTFXUj8m/vxnzDCb0t0ZshB/5+D4ssHzilHFD7mKcdP0uNVLnbfcq/SiZAcHEvt+w0j77abm5UjU/DZuqjMhtBO5mp21DcfdBWyH22bT5zT8lZmqf6Tf3IQtC5n42w0tpMSsTrW+hhPz/mJuxWwdAZuiiMqeAIQrVQA") center/contain no-repeat;opacity:.07}
+.schedule-script{height:42px;max-width:220px;object-fit:contain;display:block;margin-bottom:6px;position:relative;z-index:1}.schedule-hero p{position:relative;z-index:1;margin:0;max-width:82%;font-size:12px;color:var(--muted);line-height:1.4}
+.schedule-list{display:grid;gap:9px}.game-card{display:grid;grid-template-columns:54px 1fr auto;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 11px;box-shadow:0 2px 10px rgba(0,0,0,.035)}.opp-logo{width:48px;height:48px;object-fit:contain}.game-card h3{font-size:14px;margin:0 0 4px;line-height:1.15}.game-sub{font-size:11px;color:var(--muted);line-height:1.3}.game-result{font-size:11px;font-weight:900;white-space:nowrap;border-radius:999px;padding:6px 8px;background:var(--soft)}.game-result.win{background:#e6f4ea;color:#1f6a37}.site-tag{font-weight:850;color:var(--crimson)}
+.sources{margin:18px 2px 0;font-size:10px;color:var(--muted);line-height:1.45}
+@media (min-width:700px){.depth{grid-template-columns:1fr 1fr}.special-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="candy"></div>
+  <div class="head-inner">
+    <img class="brand-logo" alt="Indiana University" src="data:image/webp;base64,UklGRhICAABXRUJQVlA4IAYCAADQDgCdASp4AFAAPpVKnUolpKKhqzSYULASiUAanwwF434DJPqz8QDpS8gB18HU5egB0sn7AYQx0xq42KAT5hJ1hPqbXhpaYlKs2IYpm/ILjS74IQnEciN4Rr/KqOMZQzKm1h05ItFrJBXwd/IyzTM43D+yCK8nBYvZ7yR06W4AAP76toFJ5K9MJx/Q5XDClB0huZpLbwzEHLkVfYDD18+49AM+z15A+rRm1NuZnbuuA7d+RT7zcZwR6GSjR9eBhcjWsln9qMaIQmhLQJkBOrXc6Km/9nPUNNa9y/TywU5X8TQl79ih/Jpy1gdUqDVqtAUXh1u/eDNHM3pFZi2uEdXw8XMm7atHR8eP8se0WPF/eK31dj2/a7lCus7B5n3fH6gLDz+LuLb6EKxllv4sw0pWolRTtmBwe20VFuP8hhDhWMlkKXJYiIuSWADGwoE7vl8D8VgNoLYrkrO5Y9Exo3da7Oz5/+kuIkAhtQID2Yn1rBiz+OAZET94JvyH5D35CoKWQMVTe2WnyRoRd/YRu3l91jxeiQC90dHNm3ubOHI71aEaIlZFCs+WHUH+ls3kvOnYVAx2xIL1Du1c3f0hkOebmcU73t0+In+gO/530jVzjzdvrScfsgshgqL5pV4NDg4Hqm7Zp5Y2Z3j/35uE9Hx2MwVTMjeKPoSxK1pZEUxahynidXcAAA==">
+    <div class="brand"><h1>IU Football Game Watch</h1><p>vs Western Kentucky · Sat, Sept. 19 · 4:00 PM</p></div>
+    <div class="game-chip">2–0</div>
+  </div>
+  <nav class="top-tabs">
+    <div class="tabs">
+      <a class="tab" href="#offense">Offense</a>
+      <a class="tab" href="#defense">Defense</a>
+      <a class="tab" href="#roster">Roster</a>
+      <a class="tab" href="#injuries">Injuries</a>
+      <a class="tab" href="#schedule">Schedule</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <!-- Put non-default targets before offense so CSS can hide the default panel without JavaScript. -->
+  <section id="defense" class="panel">
+    <!-- summary bubble removed -->
+    <div class="section-title"><h2>Defense</h2><small>share of all 118 defensive snaps</small></div>
+    <div class="depth"><div class="depth-card"><div class="pos">EDGE</div><div><div class="starter">12 Tobi Osunsanmi <span class="snap-pct">53%</span></div><div class="subrow"><span class="label">NEXT</span><span>8 Josh Burnham <span class="snap-pct">33%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>17 Daniel Ndukwe <span class="snap-pct">41%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">DT</div><div><div class="starter">97 Mario Landino <span class="snap-pct">61%</span></div><div class="subrow"><span class="label">NEXT</span><span>90 Joe Hjelle <span class="snap-pct">41%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>98 Cam McHaney <span class="snap-pct">29%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">DT</div><div><div class="starter">95 Tyrique Tucker <span class="snap-pct">54%</span></div><div class="subrow"><span class="label">NEXT</span><span>41 Keishaun Calhoun <span class="snap-pct">8%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>91 Blake Smythe <span class="snap-pct">0%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">EDGE</div><div><div class="starter">7 Chiddi Obiazor <span class="snap-pct">32%</span></div><div class="subrow"><span class="label">NEXT</span><span>9 Stephen Daley <span class="snap-pct">27%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>18 Kellan Wyatt <span class="snap-pct">8%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">LB</div><div><div class="starter">46 Isaiah Jones <span class="snap-pct">81%</span></div><div class="subrow"><span class="label">NEXT</span><span>21 Jacob Savage <span class="snap-pct">19%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">LB</div><div><div class="starter">5 Rolijah Hardy <span class="snap-pct">80%</span></div><div class="subrow"><span class="label">NEXT</span><span>34 Jeff Utzinger <span class="snap-pct">34%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>14 Kaiden Turner <span class="snap-pct">14%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">CB</div><div><div class="starter">22 Jamari Sharpe <span class="snap-pct">14%</span><span class="status D2D">D2D</span></div><div class="subrow"><span class="label">NEXT</span><span>3 Jaylen Bell <span class="snap-pct">76%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">CB</div><div><div class="starter">4 A.J. Harris <span class="snap-pct">6%</span><span class="status D2D">D2D</span></div><div class="subrow"><span class="label">NEXT</span><span>10 Ryland Gandy <span class="snap-pct">82%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>45 Lincoln Murff <span class="snap-pct">11%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">S</div><div><div class="starter">1 Amare Ferrell <span class="snap-pct">83%</span></div><div class="subrow"><span class="label">NEXT</span><span>13 Quan Sanks <span class="snap-pct">36%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>16 Jamar Owens <span class="snap-pct">14%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">S</div><div><div class="starter">6 Preston Zachman <span class="snap-pct">75%</span></div><div class="subrow"><span class="label">NEXT</span><span>13 Quan Sanks <span class="snap-pct">36%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>16 Jamar Owens <span class="snap-pct">14%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">ROV</div><div><div class="starter">2 Byron Baldwin Jr. <span class="snap-pct">52%</span></div><div class="subrow"><span class="label">NEXT</span><span>31 Anthony Chung <span class="snap-pct">9%</span></span></div></div></div></div>
+    <div class="section-title"><h2>What we’ve learned</h2><small>through Howard</small></div><div class="notes"><div class="note"><strong>Corner depth has been tested.</strong> With Sharpe and Harris out vs. Howard, Jaylen Bell and Ryland Gandy handled starter-level work: Bell 35 snaps, Gandy 34.</div><div class="note"><strong>The front is deliberately multiple.</strong> IU has used four edge players at once, with Daley, Burnham and Obiazor kicking inside. Kellan Wyatt made his season debut vs. Howard.</div><div class="note"><strong>Hardy and Jones are the core LBs.</strong> Hardy had a pick-six vs. Howard; Jones graded especially well against the run. Jacob Savage is emerging behind them.</div><div class="note"><strong>Landino is creating pressure inside.</strong> He co-led IU with three pressures vs. Howard and forced a fumble.</div></div><div class="section-title"><h2>Availability to Watch</h2><small>secondary + defensive front</small></div>
+    <div class="injury-list"><div class="injury"><div class="injury-top"><span>22 Jamari Sharpe</span><span class="status D2D">D2D</span></div><p>Day-to-day after missing Howard. Jaylen Bell is next if he cannot go.</p></div>
+<div class="injury"><div class="injury-top"><span>4 A.J. Harris</span><span class="status D2D">D2D</span></div><p>Day-to-day after missing Howard. Ryland Gandy is next if he cannot go.</p></div>
+<div class="injury"><div class="injury-top"><span>91 Blake Smythe</span><span class="status CLOSE">CLOSE</span></div><p>Close to returning; would deepen the interior rotation.</p></div></div>
+    <div class="section-title"><h2>Season snapshot</h2><small>through 2 games</small></div>
+    <div class="stats-shell">
+      <div class="stats-list">
+        <div class="stat-row"><div><div class="stat-label">Tackles</div><div class="stat-player">Isaiah Jones</div><div class="stat-detail">12 vs. North Texas · 5 vs. Howard</div></div><div class="stat-number">17</div></div>
+        <div class="stat-row"><div><div class="stat-label">Tackles for loss</div><div class="stat-player">Tobi Osunsanmi</div><div class="stat-detail">2.0 vs. North Texas · 1.5 vs. Howard</div></div><div class="stat-number">3.5</div></div>
+        <div class="stat-row"><div><div class="stat-label">Sacks</div><div class="stat-player">Keishaun Calhoun</div><div class="stat-detail">Team total: 6</div></div><div class="stat-number">2.0</div></div>
+        <div class="stat-row"><div><div class="stat-label">Interceptions</div><div class="stat-player">Quan Sanks · Rolijah Hardy</div><div class="stat-detail">Hardy returned his pick 19 yards for a TD vs. Howard</div></div><div class="stat-number">1 each</div></div>
+      </div>
+      <div class="team-metrics">
+        <div class="metric"><strong>8.0</strong><span>points allowed per game</span></div>
+        <div class="metric"><strong>212.0</strong><span>yards allowed per game</span></div>
+        <div class="metric"><strong>3.7</strong><span>yards allowed per play</span></div>
+        <div class="metric"><strong>27.6%</strong><span>opponent third-down conversion</span></div>
+        <div class="metric"><strong>6</strong><span>team sacks</span></div>
+        <div class="metric"><strong>2</strong><span>team interceptions</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="injuries" class="panel"><!-- injury summary bubble removed --><div class="section-title"><h2>Current injuries</h2><small>updated Sept. 14</small></div><div class="injury-list"><div class="injury"><div class="injury-top"><span>22 Jamari Sharpe · CB</span><span class="status D2D">D2D</span></div><p>Day-to-day after North Texas; did not play vs. Howard. Jaylen Bell is next.</p></div><div class="injury"><div class="injury-top"><span>4 A.J. Harris · CB</span><span class="status D2D">D2D</span></div><p>Day-to-day after North Texas; did not play vs. Howard. Ryland Gandy is next.</p></div><div class="injury"><div class="injury-top"><span>28 Khobie Martin · RB</span><span class="status OUT">OUT</span></div><p>Expected out until roughly midseason. Richard and Beebe are the lead backs.</p></div><div class="injury"><div class="injury-top"><span>39 Trevor Gibbs · TE</span><span class="status CLOSE">CLOSE</span></div><p>Missed the first two games; described as close to returning.</p></div><div class="injury"><div class="injury-top"><span>91 Blake Smythe · DT</span><span class="status CLOSE">CLOSE</span></div><p>Missed the first two games; described as close to returning.</p></div><div class="injury"><div class="injury-top"><span>15 Nico Radicic · K</span><span class="status TBD">TBD</span></div><p>Missed Howard after a late-week back injury.</p></div></div></section>
+
+  <section id="roster" class="panel">
+    <!-- roster summary bubble removed -->
+    <div class="jumpbar"><a href="#roster-0">0–19</a> <a href="#roster-20">20–39</a> <a href="#roster-40">40–59</a> <a href="#roster-60">60–79</a> <a href="#roster-80">80–99</a></div>
+    <div class="roster"><div id="roster-0" class="jump-anchor"></div><div class="player-row" id="n0-Carson-Williams"><div class="number">0</div><div><div class="pname">Carson Williams</div><div class="pmeta">3rd · Houston, Texas</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n1-Amare-Ferrell"><div class="number">1</div><div><div class="pname">Amare Ferrell</div><div class="pmeta">4th · Lake City, Fla.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n1-Turbo-Richard"><div class="number">1</div><div><div class="pname">Turbo Richard</div><div class="pmeta">3rd · Charlotte, N.C. · Prior: Boston College</div></div><div class="ppos">RB</div></div>
+<div class="player-row" id="n2-Byron-Baldwin-Jr."><div class="number">2</div><div><div class="pname">Byron Baldwin Jr.</div><div class="pmeta">2nd · Baltimore, Md.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n2-Grant-Wilson"><div class="number">2</div><div><div class="pname">Grant Wilson</div><div class="pmeta">7th · Arlington, Va. · Prior: Old Dominion</div></div><div class="ppos">QB</div></div>
+<div class="player-row" id="n3-Jaylen-Bell"><div class="number">3</div><div><div class="pname">Jaylen Bell</div><div class="pmeta">2nd · Union, N.J.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n3-Kortez-Rupert"><div class="number">3</div><div><div class="pname">Kortez Rupert</div><div class="pmeta">1st · East Saint Louis, Ill.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n4-Davion-Chandler"><div class="number">4</div><div><div class="pname">Davion Chandler</div><div class="pmeta">2nd · Indianapolis, Ind.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n4-A.J.-Harris"><div class="number">4</div><div><div class="pname">A.J. Harris <span class="status D2D">D2D</span></div><div class="pmeta">4th · Phenix City, Ala. · Prior: Penn State</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n5-Rolijah-Hardy"><div class="number">5</div><div><div class="pname">Rolijah Hardy</div><div class="pmeta">3rd · Lakeland, Fla.</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n6-Lebron-Bond"><div class="number">6</div><div><div class="pname">Lebron Bond</div><div class="pmeta">2nd · Norfolk, Va.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n6-Preston-Zachman"><div class="number">6</div><div><div class="pname">Preston Zachman</div><div class="pmeta">7th · Elysburg, Pa. · Prior: Wisconsin</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n7-Chiddi-Obiazor"><div class="number">7</div><div><div class="pname">Chiddi Obiazor</div><div class="pmeta">4th · Eden Prairie, Minn. · Prior: Kansas State</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n7-Shazz-Preston"><div class="number">7</div><div><div class="pname">Shazz Preston</div><div class="pmeta">5th · Saint James, La. · Prior: Tulane</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n8-Josh-Burnham"><div class="number">8</div><div><div class="pname">Josh Burnham</div><div class="pmeta">5th · Traverse City, Mich. · Prior: Notre Dame</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n8-Tyler-Morris"><div class="number">8</div><div><div class="pname">Tyler Morris</div><div class="pmeta">5th · Bolingbrook, Ill. · Prior: Michigan</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n9-Stephen-Daley"><div class="number">9</div><div><div class="pname">Stephen Daley</div><div class="pmeta">5th · Winchester, Va. · Prior: Kent State</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n9-Lavar-Keys"><div class="number">9</div><div><div class="pname">Lavar Keys</div><div class="pmeta">1st · Hyattsville, Md.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n9-Seaonta-Stewart-Jr."><div class="number">9</div><div><div class="pname">Seaonta Stewart Jr.</div><div class="pmeta">2nd · Cincinnati, Ohio</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n10-Ryland-Gandy"><div class="number">10</div><div><div class="pname">Ryland Gandy</div><div class="pmeta">5th · Buford, Ga. · Prior: Pittsburgh</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n10-Josh-Hoover"><div class="number">10</div><div><div class="pname">Josh Hoover</div><div class="pmeta">5th · Heath, Texas · Prior: TCU</div></div><div class="ppos">QB</div></div>
+<div class="player-row" id="n11-Nick-Marsh"><div class="number">11</div><div><div class="pname">Nick Marsh</div><div class="pmeta">3rd · Detroit, Mich. · Prior: Michigan State</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n12-Jacob-Bell"><div class="number">12</div><div><div class="pname">Jacob Bell</div><div class="pmeta">2nd · Naperville, Ill.</div></div><div class="ppos">QB</div></div>
+<div class="player-row" id="n12-Tobi-Osunsanmi"><div class="number">12</div><div><div class="pname">Tobi Osunsanmi</div><div class="pmeta">5th · Wichita, Kan. · Prior: Kansas State</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n13-Quan-Sanks"><div class="number">13</div><div><div class="pname">Quan Sanks</div><div class="pmeta">3rd · Columbus, Ga. · Prior: Cincinnati</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n14-Maverick-Geske"><div class="number">14</div><div><div class="pname">Maverick Geske</div><div class="pmeta">2nd · Indianapolis, Ind.</div></div><div class="ppos">QB</div></div>
+<div class="player-row" id="n14-Kaiden-Turner"><div class="number">14</div><div><div class="pname">Kaiden Turner</div><div class="pmeta">5th · Fayetteville, Ark.</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n15-Tyler-Cherry"><div class="number">15</div><div><div class="pname">Tyler Cherry</div><div class="pmeta">2nd · Greenwood, Ind.</div></div><div class="ppos">QB</div></div>
+<div class="player-row" id="n15-Nico-Radicic"><div class="number">15</div><div><div class="pname">Nico Radicic <span class="status TBD">TBD</span></div><div class="pmeta">4th · Coppell, Texas</div></div><div class="ppos">K</div></div>
+<div class="player-row" id="n16-Jamar-Owens"><div class="number">16</div><div><div class="pname">Jamar Owens</div><div class="pmeta">1st · Jonesboro, Ga.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n17-Daniel-Ndukwe"><div class="number">17</div><div><div class="pname">Daniel Ndukwe</div><div class="pmeta">3rd · Lithonia, Ga.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n17-Jackson-Wasserstrom"><div class="number">17</div><div><div class="pname">Jackson Wasserstrom</div><div class="pmeta">5th · Westfield, Ind.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n18-Parker-Elmore"><div class="number">18</div><div><div class="pname">Parker Elmore</div><div class="pmeta">1st · Columbus, Ind.</div></div><div class="ppos">TE</div></div>
+<div class="player-row" id="n18-Kellan-Wyatt"><div class="number">18</div><div><div class="pname">Kellan Wyatt</div><div class="pmeta">5th · Glen Burnie, Md. · Prior: Maryland</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n19-Billy-Gowers"><div class="number">19</div><div><div class="pname">Billy Gowers</div><div class="pmeta">2nd · Melbourne, Australia · Prior: Hawai’i</div></div><div class="ppos">P</div></div>
+<div class="player-row" id="n19-Zacharey-Smith"><div class="number">19</div><div><div class="pname">Zacharey Smith</div><div class="pmeta">2nd · Union City, Ga.</div></div><div class="ppos">DB</div></div>
+<div id="roster-20" class="jump-anchor"></div><div class="player-row" id="n20-Sean-Cuono"><div class="number">20</div><div><div class="pname">Sean Cuono</div><div class="pmeta">2nd · Clearwater, Fla.</div></div><div class="ppos">RB</div></div>
+<div class="player-row" id="n21-Jacob-Savage"><div class="number">21</div><div><div class="pname">Jacob Savage</div><div class="pmeta">1st · Union, Ky.</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n22-Jayreon-Campbell"><div class="number">22</div><div><div class="pname">Jayreon Campbell</div><div class="pmeta">1st · Powder Springs, Ga.</div></div><div class="ppos">RB</div></div>
+<div class="player-row" id="n22-Jamari-Sharpe"><div class="number">22</div><div><div class="pname">Jamari Sharpe <span class="status D2D">D2D</span></div><div class="pmeta">5th · Miami, Fla.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n23-Henry-Ohlinger"><div class="number">23</div><div><div class="pname">Henry Ohlinger</div><div class="pmeta">1st · Columbus, Ohio</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n24-Ja&#x27;Dyn-Williams"><div class="number">24</div><div><div class="pname">Ja&#x27;Dyn Williams</div><div class="pmeta">1st · Massillon, Ohio</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n25-D&#x27;Montae-Tims"><div class="number">25</div><div><div class="pname">D&#x27;Montae Tims</div><div class="pmeta">1st · Tampa, Fla.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n26-Cade-Kaiser"><div class="number">26</div><div><div class="pname">Cade Kaiser</div><div class="pmeta">2nd · Batesville, Ind.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n26-Iosua-Stephens"><div class="number">26</div><div><div class="pname">Iosua Stephens</div><div class="pmeta">2nd · Brownsburg, Ind.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n27-Kasmir-Hicks"><div class="number">27</div><div><div class="pname">Kasmir Hicks</div><div class="pmeta">1st · Indianapolis, Ind.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n28-Khobie-Martin"><div class="number">28</div><div><div class="pname">Khobie Martin <span class="status OUT">OUT</span></div><div class="pmeta">3rd · Fishers, Ind.</div></div><div class="ppos">RB</div></div>
+<div class="player-row" id="n29-Lee-Beebe-Jr."><div class="number">29</div><div><div class="pname">Lee Beebe Jr.</div><div class="pmeta">5th · Montgomery, Ala. · Prior: UAB</div></div><div class="ppos">RB</div></div>
+<div class="player-row" id="n30-PJ-Nelson"><div class="number">30</div><div><div class="pname">PJ Nelson</div><div class="pmeta">2nd · Cincinnati, Ohio</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n31-Anthony-Chung"><div class="number">31</div><div><div class="pname">Anthony Chung</div><div class="pmeta">4th · Mequon, Wis.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n33-Garrett-Reese"><div class="number">33</div><div><div class="pname">Garrett Reese</div><div class="pmeta">2nd · Chicago, Ill.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n34-Jeff-Utzinger"><div class="number">34</div><div><div class="pname">Jeff Utzinger</div><div class="pmeta">5th · Carmel, Ind.</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n35-Paddy-McAteer"><div class="number">35</div><div><div class="pname">Paddy McAteer</div><div class="pmeta">5th · Mullaghbawn, Ireland · Prior: Troy</div></div><div class="ppos">K</div></div>
+<div class="player-row" id="n36-Clay-Conner"><div class="number">36</div><div><div class="pname">Clay Conner</div><div class="pmeta">4th · Boonville, Ind.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n37-Heath-Kizer"><div class="number">37</div><div><div class="pname">Heath Kizer</div><div class="pmeta">3rd · Indianapolis, Ind.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n38-Kaden-McConnell"><div class="number">38</div><div><div class="pname">Kaden McConnell</div><div class="pmeta">3rd · Greenwood, Ind.</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n39-Trevor-Gibbs"><div class="number">39</div><div><div class="pname">Trevor Gibbs <span class="status CLOSE">CLOSE</span></div><div class="pmeta">1st · Crown Point, Ind.</div></div><div class="ppos">TE</div></div>
+<div id="roster-40" class="jump-anchor"></div><div class="player-row" id="n40-Quentin-Clark"><div class="number">40</div><div><div class="pname">Quentin Clark</div><div class="pmeta">3rd · Dexter, Ga.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n41-Keishaun-Calhoun"><div class="number">41</div><div><div class="pname">Keishaun Calhoun</div><div class="pmeta">2nd · Groveport, Ohio</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n42-Kevontay-Hugan"><div class="number">42</div><div><div class="pname">Kevontay Hugan</div><div class="pmeta">1st · Sarasota, Fla.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n43-Bryce-Taylor"><div class="number">43</div><div><div class="pname">Bryce Taylor</div><div class="pmeta">2nd · Bloomington, Ind.</div></div><div class="ppos">K</div></div>
+<div class="player-row" id="n44-Amari-Kamara"><div class="number">44</div><div><div class="pname">Amari Kamara</div><div class="pmeta">2nd · Ashburn, Va.</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n45-Lincoln-Murff"><div class="number">45</div><div><div class="pname">Lincoln Murff</div><div class="pmeta">4th · Indianapolis, Ind.</div></div><div class="ppos">DB</div></div>
+<div class="player-row" id="n46-Isaiah-Jones"><div class="number">46</div><div><div class="pname">Isaiah Jones</div><div class="pmeta">5th · London, Ohio</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n47-Jackson-Tolle"><div class="number">47</div><div><div class="pname">Jackson Tolle</div><div class="pmeta">1st · Fishers, Ind.</div></div><div class="ppos">LS</div></div>
+<div class="player-row" id="n50-Jhrevious-Hall"><div class="number">50</div><div><div class="pname">Jhrevious Hall</div><div class="pmeta">2nd · Columbia, Tenn.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n52-Clayton-Allen"><div class="number">52</div><div><div class="pname">Clayton Allen</div><div class="pmeta">4th · Fishers, Ind.</div></div><div class="ppos">LB</div></div>
+<div class="player-row" id="n55-Drew-Clausen"><div class="number">55</div><div><div class="pname">Drew Clausen</div><div class="pmeta">6th · Grimes, Iowa</div></div><div class="ppos">LS</div></div>
+<div class="player-row" id="n55-Rodney-White"><div class="number">55</div><div><div class="pname">Rodney White</div><div class="pmeta">1st · Baltimore, Md.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n56-Joe-Brunner"><div class="number">56</div><div><div class="pname">Joe Brunner</div><div class="pmeta">5th · Whitefish Bay, Wis. · Prior: Wisconsin</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n57-Sam-Lindsey"><div class="number">57</div><div><div class="pname">Sam Lindsey</div><div class="pmeta">4th · Lilburn, Ga. · Prior: Georgia State</div></div><div class="ppos">LS</div></div>
+<div id="roster-60" class="jump-anchor"></div><div class="player-row" id="n60-CJ-Scifres"><div class="number">60</div><div><div class="pname">CJ Scifres</div><div class="pmeta">1st · Bargersville, Ind.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n61-Baylor-Wilkin"><div class="number">61</div><div><div class="pname">Baylor Wilkin</div><div class="pmeta">2nd · Van Buren, Ohio</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n62-Drew-Evans"><div class="number">62</div><div><div class="pname">Drew Evans</div><div class="pmeta">5th · Fort Atkinson, Wis. · Prior: Wisconsin</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n64-Chance-Johnson"><div class="number">64</div><div><div class="pname">Chance Johnson</div><div class="pmeta">2nd · Jeffersonville, Ind.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n65-Carter-Smith"><div class="number">65</div><div><div class="pname">Carter Smith</div><div class="pmeta">5th · Powell, Ohio</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n66-Evan-Parker"><div class="number">66</div><div><div class="pname">Evan Parker</div><div class="pmeta">2nd · Carmel, Ind.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n70-Austin-Leibfried"><div class="number">70</div><div><div class="pname">Austin Leibfried</div><div class="pmeta">3rd · Mount Horeb, Wis.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n71-Ben-Novak"><div class="number">71</div><div><div class="pname">Ben Novak</div><div class="pmeta">1st · Crown Point, Ind.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n72-Adedamola-Ajani"><div class="number">72</div><div><div class="pname">Adedamola Ajani</div><div class="pmeta">3rd · Indianapolis, Ind.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n73-Luke-Graham"><div class="number">73</div><div><div class="pname">Luke Graham</div><div class="pmeta">1st · Pendleton, Ind.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n74-Bray-Lynch"><div class="number">74</div><div><div class="pname">Bray Lynch</div><div class="pmeta">5th · Austin, Texas</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n75-Sam-Simpson"><div class="number">75</div><div><div class="pname">Sam Simpson</div><div class="pmeta">1st · River Falls, Wis.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n76-Kenton-Mondeau"><div class="number">76</div><div><div class="pname">Kenton Mondeau</div><div class="pmeta">1st · Eau Claire, Wis.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n77-Matt-Marek"><div class="number">77</div><div><div class="pname">Matt Marek</div><div class="pmeta">2nd · Orland Park, Ill.</div></div><div class="ppos">OL</div></div>
+<div class="player-row" id="n78-Prescott-Horvath"><div class="number">78</div><div><div class="pname">Prescott Horvath</div><div class="pmeta">1st · Mishawaka, Ind.</div></div><div class="ppos">OL</div></div>
+<div id="roster-80" class="jump-anchor"></div><div class="player-row" id="n80-Charlie-Becker"><div class="number">80</div><div><div class="pname">Charlie Becker</div><div class="pmeta">3rd · Nashville, Tenn.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n81-Jaidon-Van-Pelt"><div class="number">81</div><div><div class="pname">Jaidon Van Pelt</div><div class="pmeta">1st · Fort Wayne, Ind.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n82-Myles-Kendrick"><div class="number">82</div><div><div class="pname">Myles Kendrick</div><div class="pmeta">2nd · Jacksonville, Fla.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n83-Hunter-Stroud"><div class="number">83</div><div><div class="pname">Hunter Stroud</div><div class="pmeta">2nd · Martinsville, Ind.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n84-Blake-Thiry"><div class="number">84</div><div><div class="pname">Blake Thiry</div><div class="pmeta">2nd · Prairie Du Chien, Wis.</div></div><div class="ppos">TE</div></div>
+<div class="player-row" id="n85-Andrew-Barker"><div class="number">85</div><div><div class="pname">Andrew Barker</div><div class="pmeta">2nd · Kokomo, Ind.</div></div><div class="ppos">TE</div></div>
+<div class="player-row" id="n86-Bruno-Massel-IV"><div class="number">86</div><div><div class="pname">Bruno Massel IV</div><div class="pmeta">2nd · Elmhurst, Ill.</div></div><div class="ppos">WR</div></div>
+<div class="player-row" id="n87-PJ-MacFarlane"><div class="number">87</div><div><div class="pname">PJ MacFarlane</div><div class="pmeta">1st · Liberty Township, Ohio</div></div><div class="ppos">TE</div></div>
+<div class="player-row" id="n88-Brock-Schott"><div class="number">88</div><div><div class="pname">Brock Schott</div><div class="pmeta">2nd · Fort Wayne, Ind. · Prior: Miami (Fla.)</div></div><div class="ppos">TE</div></div>
+<div class="player-row" id="n90-Joe-Hjelle"><div class="number">90</div><div><div class="pname">Joe Hjelle</div><div class="pmeta">5th · Decorah, Iowa · Prior: Tulsa</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n90-Josh-Placzek"><div class="number">90</div><div><div class="pname">Josh Placzek</div><div class="pmeta">3rd · Carmel, Ind.</div></div><div class="ppos">K</div></div>
+<div class="player-row" id="n91-Blake-Smythe"><div class="number">91</div><div><div class="pname">Blake Smythe <span class="status CLOSE">CLOSE</span></div><div class="pmeta">1st · Trafalgar, Ind.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n92-Gabe-Hill"><div class="number">92</div><div><div class="pname">Gabe Hill</div><div class="pmeta">1st · Naperville, Ill.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n93-Ronelle-Johnson"><div class="number">93</div><div><div class="pname">Ronelle Johnson</div><div class="pmeta">1st · Kansas City, Mo.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n93-Quinn-Warren"><div class="number">93</div><div><div class="pname">Quinn Warren</div><div class="pmeta">3rd · Indianapolis, Ind.</div></div><div class="ppos">K</div></div>
+<div class="player-row" id="n94-Kyler-Garcia"><div class="number">94</div><div><div class="pname">Kyler Garcia</div><div class="pmeta">2nd · Nashville, Tenn.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n95-Tyrique-Tucker"><div class="number">95</div><div><div class="pname">Tyrique Tucker</div><div class="pmeta">5th · Norfolk, Va. · Prior: James Madison</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n97-Mario-Landino"><div class="number">97</div><div><div class="pname">Mario Landino</div><div class="pmeta">3rd · Macungie, Pa.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n98-Cam-McHaney"><div class="number">98</div><div><div class="pname">Cam McHaney</div><div class="pmeta">1st · Indianapolis, Ind.</div></div><div class="ppos">DL</div></div>
+<div class="player-row" id="n99-Tyrone-Burrus-Jr."><div class="number">99</div><div><div class="pname">Tyrone Burrus Jr.</div><div class="pmeta">2nd · Indianapolis, Ind.</div></div><div class="ppos">DL</div></div></div>
+  </section>
+
+  <section id="schedule" class="panel">
+    <div class="schedule-hero">
+      <div style="font-size:28px;font-weight:900;color:var(--crimson);letter-spacing:-.03em;position:relative;z-index:1;margin-bottom:5px">Indiana Football</div>
+      <p>2026 schedule and results. Final scores are shown for completed games; future games show the current listed kickoff time and location.</p>
+    </div>
+    <div class="schedule-list">
+      <div class="game-card"><img class="opp-logo" alt="North Texas" src="https://a.espncdn.com/i/teamlogos/ncaa/500/249.png"><div><h3>North Texas</h3><div class="game-sub"><span class="site-tag">HOME</span> · Bloomington, Ind. · Sep 5 · FOX</div></div><div class="game-result win">W 52–16</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Howard" src="https://a.espncdn.com/i/teamlogos/ncaa/500/47.png"><div><h3>Howard</h3><div class="game-sub"><span class="site-tag">HOME</span> · Bloomington, Ind. · Sep 12 · BTN</div></div><div class="game-result win">W 55–0</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Western Kentucky" src="https://a.espncdn.com/i/teamlogos/ncaa/500/98.png"><div><h3>Western Kentucky</h3><div class="game-sub"><span class="site-tag">HOME</span> · Bloomington, Ind. · Sep 19 · Peacock</div></div><div class="game-result">4:00 PM</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Northwestern" src="https://a.espncdn.com/i/teamlogos/ncaa/500/77.png"><div><h3>Northwestern</h3><div class="game-sub"><span class="site-tag">HOME</span> · Bloomington, Ind. · Sep 25 · FOX</div></div><div class="game-result">8:00 PM</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Rutgers" src="https://a.espncdn.com/i/teamlogos/ncaa/500/164.png"><div><h3>Rutgers</h3><div class="game-sub"><span class="site-tag">AWAY</span> · Piscataway, N.J. · Oct 3</div></div><div class="game-result">8:00 PM</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Nebraska" src="https://a.espncdn.com/i/teamlogos/ncaa/500/158.png"><div><h3>Nebraska</h3><div class="game-sub"><span class="site-tag">AWAY</span> · Lincoln, Neb. · Oct 10</div></div><div class="game-result">TBA</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Ohio State" src="https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"><div><h3>Ohio State</h3><div class="game-sub"><span class="site-tag">HOME</span> · Bloomington, Ind. · Oct 17</div></div><div class="game-result">TBA</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Michigan" src="https://a.espncdn.com/i/teamlogos/ncaa/500/130.png"><div><h3>Michigan</h3><div class="game-sub"><span class="site-tag">AWAY</span> · Ann Arbor, Mich. · Oct 24</div></div><div class="game-result">TBA</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Minnesota" src="https://a.espncdn.com/i/teamlogos/ncaa/500/135.png"><div><h3>Minnesota</h3><div class="game-sub"><span class="site-tag">HOME</span> · Bloomington, Ind. · Oct 31</div></div><div class="game-result">TBA</div></div>
+      <div class="game-card"><img class="opp-logo" alt="USC" src="https://a.espncdn.com/i/teamlogos/ncaa/500/30.png"><div><h3>USC</h3><div class="game-sub"><span class="site-tag">HOME</span> · Bloomington, Ind. · Nov 14</div></div><div class="game-result">TBA</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Washington" src="https://a.espncdn.com/i/teamlogos/ncaa/500/264.png"><div><h3>Washington</h3><div class="game-sub"><span class="site-tag">AWAY</span> · Seattle, Wash. · Nov 21</div></div><div class="game-result">TBA</div></div>
+      <div class="game-card"><img class="opp-logo" alt="Purdue" src="https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png"><div><h3>Purdue</h3><div class="game-sub"><span class="site-tag">HOME</span> · Bloomington, Ind. · Nov 28</div></div><div class="game-result">TBA</div></div>
+    </div>
+  </section>
+
+  <section id="offense" class="panel">
+    <!-- summary bubble removed -->
+    <div class="section-title"><h2>Offense</h2><small>share of all 110 offensive snaps</small></div>
+    <div class="depth"><div class="depth-card"><div class="pos">QB</div><div><div class="starter">10 Josh Hoover <span class="snap-pct">77%</span></div><div class="subrow"><span class="label">NEXT</span><span>2 Grant Wilson <span class="snap-pct">10%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>15 Tyler Cherry <span class="snap-pct">13%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">RB</div><div><div class="starter">1 Turbo Richard <span class="snap-pct">33%</span></div><div class="subrow"><span class="label">NEXT</span><span>29 Lee Beebe Jr. <span class="snap-pct">52%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>20 Sean Cuono <span class="snap-pct">8%</span> / 22 Jayreon Campbell <span class="snap-pct">6%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">X WR</div><div><div class="starter">11 Nick Marsh <span class="snap-pct">66%</span></div><div class="subrow"><span class="label">NEXT</span><span>4 Davion Chandler <span class="snap-pct">30%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>9 Lavar Keys <span class="snap-pct">5%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">Z WR</div><div><div class="starter">80 Charlie Becker <span class="snap-pct">73%</span></div><div class="subrow"><span class="label">NEXT</span><span>7 Shazz Preston <span class="snap-pct">38%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>17 Jackson Wasserstrom <span class="snap-pct">14%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">SLOT</div><div><div class="starter">8 Tyler Morris <span class="snap-pct">50%</span></div><div class="subrow"><span class="label">NEXT</span><span>6 Lebron Bond <span class="snap-pct">5%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>26 Cade Kaiser <span class="snap-pct">3%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">TE</div><div><div class="starter">85 Andrew Barker <span class="snap-pct">50%</span> / 88 Brock Schott <span class="snap-pct">48%</span></div><div class="subrow"><span class="label">NEXT</span><span>84 Blake Thiry <span class="snap-pct">5%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>18 Parker Elmore <span class="snap-pct">1%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">LT</div><div><div class="starter">65 Carter Smith <span class="snap-pct">86%</span></div><div class="subrow"><span class="label">NEXT</span><span>76 Kenton Mondeau <span class="snap-pct">13%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">LG</div><div><div class="starter">62 Drew Evans <span class="snap-pct">86%</span></div><div class="subrow"><span class="label">NEXT</span><span>77 Matt Marek <span class="snap-pct">8%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>66 Evan Parker <span class="snap-pct">5%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">C</div><div><div class="starter">74 Bray Lynch <span class="snap-pct">86%</span></div><div class="subrow"><span class="label">NEXT</span><span>70 Austin Leibfried <span class="snap-pct">19%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">RG</div><div><div class="starter">56 Joe Brunner <span class="snap-pct">86%</span></div><div class="subrow"><span class="label">NEXT</span><span>75 Sam Simpson <span class="snap-pct">14%</span></span></div></div></div>
+<div class="depth-card"><div class="pos">RT</div><div><div class="starter">72 Adedamola Ajani <span class="snap-pct">86%</span></div><div class="subrow"><span class="label">NEXT</span><span>70 Austin Leibfried <span class="snap-pct">19%</span></span></div><div class="subrow rotation"><span class="label">ROT</span><span>61 Baylor Wilkin <span class="snap-pct">14%</span></span></div></div></div></div>
+    <div class="section-title"><h2>What we’ve learned</h2><small>through Howard</small></div><div class="notes"><div class="note"><strong>Richard and Beebe are a true two-back lead group.</strong> Both topped 100 rushing yards vs. Howard; Beebe played 32 snaps and Richard 15.</div><div class="note"><strong>The top-five WR group is taking shape.</strong> Becker, Marsh, Morris, Chandler and Preston are the main five. Preston tied for the most WR snaps vs. Howard and Chandler’s role jumped sharply.</div><div class="note"><strong>TE is a 1A/1B rotation.</strong> Barker started and played 34 snaps vs. Howard after Schott led TE usage vs. North Texas. Expect both, including 12 personnel.</div><div class="note"><strong>The starting OL is settled.</strong> Smith-Evans-Lynch-Brunner-Ajani is the first group; IU allowed only one QB pressure vs. Howard.</div><div class="note"><strong>Hoover is firmly QB1.</strong> He went 13-of-16 for 231 yards and four TDs vs. North Texas; Wilson is the experienced backup and Cherry got extended Howard work.</div></div><div class="section-title"><h2>Special teams</h2><small>current working order</small></div>
+    <div class="special-grid"><div class="special-card"><div class="pos">PK</div><div class="starter">15 Nico Radicic<span class="status TBD">TBD</span></div><div class="subrow"><span class="label">NEXT</span><span>35 Paddy McAteer</span></div></div>
+<div class="special-card"><div class="pos">P</div><div class="starter">19 Billy Gowers</div><div class="subrow"><span class="label">NEXT</span><span>35 Paddy McAteer</span></div></div>
+<div class="special-card"><div class="pos">LS</div><div class="starter">55 Drew Clausen</div><div class="subrow"><span class="label">NEXT</span><span>57 Sam Lindsey</span></div></div>
+<div class="special-card"><div class="pos">PR</div><div class="starter">8 Tyler Morris</div></div>
+<div class="special-card"><div class="pos">KR</div><div class="starter">29 Lee Beebe Jr.</div><div class="subrow"><span class="label">NEXT</span><span>1 Turbo Richard</span></div></div></div>
+    <div class="section-title"><h2>Availability to Watch</h2><small>players most likely to alter the chart</small></div>
+    <div class="injury-list"><div class="injury"><div class="injury-top"><span>28 Khobie Martin</span><span class="status OUT">OUT</span></div><p>Expected out until roughly midseason.</p></div>
+<div class="injury"><div class="injury-top"><span>39 Trevor Gibbs</span><span class="status CLOSE">CLOSE</span></div><p>Close, but IU has been taking it slowly.</p></div>
+<div class="injury"><div class="injury-top"><span>15 Nico Radicic</span><span class="status TBD">TBD</span></div><p>Missed Howard with a late-week back injury; availability TBD.</p></div></div>
+    <div class="section-title"><h2>Season snapshot</h2><small>through 2 games</small></div>
+    <div class="stats-shell">
+      <div class="stats-list">
+        <div class="stat-row"><div><div class="stat-label">Passing</div><div class="stat-player">Josh Hoover</div><div class="stat-detail">19-of-27 · 70.4% · 8 TD · 0 INT</div></div><div class="stat-number">376 yds</div></div>
+        <div class="stat-row"><div><div class="stat-label">Rushing</div><div class="stat-player">Turbo Richard</div><div class="stat-detail">26 carries · 3 TD · 6.4 yards/carry</div></div><div class="stat-number">166 yds</div></div>
+        <div class="stat-row"><div><div class="stat-label">Rushing</div><div class="stat-player">Lee Beebe Jr.</div><div class="stat-detail">112 yards vs. Howard</div></div><div class="stat-number">145 yds</div></div>
+        <div class="stat-row"><div><div class="stat-label">Receiving</div><div class="stat-player">Charlie Becker</div><div class="stat-detail">5 receiving TD</div></div><div class="stat-number">145 yds</div></div>
+      </div>
+      <div class="team-metrics">
+        <div class="metric"><strong>53.5</strong><span>points per game</span></div>
+        <div class="metric"><strong>435.0</strong><span>yards per game</span></div>
+        <div class="metric"><strong>8.1</strong><span>yards per play</span></div>
+        <div class="metric"><strong>63.2%</strong><span>third-down conversion</span></div>
+        <div class="metric"><strong>7-for-7</strong><span>red-zone scores</span></div>
+        <div class="metric"><strong>15</strong><span>offensive touchdowns</span></div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+<script src="/player-bios.js" defer></script>
+</body>
+</html>
