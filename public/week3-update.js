@@ -1,4 +1,6 @@
-/* IU Football Game Watch — Week 3, September 21, 2026. Snaps: The Daily Hoosier; season stats: IU Athletics. */
+/* IU Football Game Watch — verified Week 3 update, September 21, 2026.
+   Snaps: The Daily Hoosier game-by-game PFF lists. Stats: IU Athletics.
+   Keeps the existing mobile design, numerical roster and player-bio links. */
 document.addEventListener('DOMContentLoaded', () => {
   const games = {
     offense: [
