@@ -25,6 +25,7 @@ jobs:
           test -s public/index.html
           test -s public/week3-update.js
           test -s public/design-update.js
+          grep -q 'defensiveCategories' public/design-update.js
       - name: Commit only changed site source
         shell: bash
         run: |
