@@ -1,0 +1,38 @@
+name: Sync live IU Game Watch to GitHub
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-live-site.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 14 * * 1'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Fetch actual deployed source
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 'https://iu-football-game.hatchable.site/' -o public/index.html
+          curl --fail --location --retry 3 'https://iu-football-game.hatchable.site/week3-update.js' -o public/week3-update.js
+          curl --fail --location --retry 3 'https://iu-football-game.hatchable.site/design-update.js' -o public/design-update.js
+          test -s public/index.html
+          test -s public/week3-update.js
+          test -s public/design-update.js
+      - name: Commit only changed site source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/index.html public/week3-update.js public/design-update.js
+          if ! git diff --cached --quiet; then
+            git commit -m 'Sync published IU Game Watch source from Hatchable'
+            git push
+          fi
