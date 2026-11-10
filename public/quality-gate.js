@@ -15,8 +15,14 @@
   const current=document.querySelector('#schedule .opponent-preview')?.textContent||'';
   const currentDate=current.match(/Nov\.\s*\d+|Oct\.\s*\d+|Sep\.\s*\d+/)?.[0];
   check('Next opponent card exists',!!currentDate);
-  const past=document.querySelectorAll('#schedule .game-result');
-  check('Past results contain winner/loser class',past.length>0&&[...past].every(r=>r.classList.contains('win')||r.classList.contains('loss')));
+  const results=[...document.querySelectorAll('#schedule .game-result')];
+  const past=results.filter(r=>/^[WL]\s/.test(r.textContent.trim()));
+  check('Completed games have winner/loser class',past.length===9&&past.every(r=>r.classList.contains('win')||r.classList.contains('loss')));
+  check('Upcoming games are not marked as completed',results.length===12&&results.filter(r=>!/^[WL]\s/.test(r.textContent.trim())).every(r=>!r.classList.contains('win')&&!r.classList.contains('loss')));
+  check('Injuries tab has status or explicit no-report notice',!!document.querySelector('#injuries .injury-list')?.textContent.trim());
+  check('All six tabs exist', ['offense','defense','roster','injuries','schedule','preview'].every(id=>!!document.getElementById(id)));
+  const ids=[...document.querySelectorAll('[id]')].map(el=>el.id);
+  check('No duplicate HTML ids',new Set(ids).size===ids.length);
   const source=document.documentElement.innerHTML;
   check('No stale eight-game ledger labels',!source.includes('All eight games'));
   check('No prior-game analysis mislabeled as current',!(/through Minnesota[^<]{0,30}Oct\. 24/i.test(source)));
