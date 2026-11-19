@@ -1,7 +1,7 @@
 /* IU Football Game Watch: one authoritative snap ledger and renderer.
    The static HTML is the accessible fallback; /snap-history.json is canonical. */
 document.addEventListener('DOMContentLoaded', async () => {
-  const names = ['NT','HOW','WKU','NW','RUT','NEB','OSU','MICH','MINN'];
+  const names = ['NT','HOW','WKU','NW','RUT','NEB','OSU','MICH','MINN','USC'];
   const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   try {
     const response = await fetch('/snap-history.json', {cache:'no-store'});
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     for (const unit of ['offense','defense']) {
       const games = data.games.filter(g => g.unit === unit);
       const denom = games.reduce((n,g) => n + g.plays, 0);
-      if (games.length !== 9 || denom !== data.season.plays[unit]) throw new Error('snap denominator mismatch');
+      if (games.length !== 10 || denom !== data.season.plays[unit]) throw new Error('snap denominator mismatch');
       const sums = {};
       for (const game of games) for (const [name,n] of Object.entries(game.counts)) sums[name === 'Byron Baldwin' ? 'Byron Baldwin Jr.' : name] = (sums[name === 'Byron Baldwin' ? 'Byron Baldwin Jr.' : name]||0)+n;
       for (const [name,n] of Object.entries(data.season.counts[unit])) if (sums[name] !== n) throw new Error('snap season mismatch: '+name);
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const name = raw.replace(/^\/?\s*\d+\s+/, '').trim();
         if (!(name in sums)) return;
         const total = sums[name];
-        el.title = total+' of '+denom+' charted '+unit+' snaps through Minnesota';
+        el.title = total+' of '+denom+' charted '+unit+' snaps through USC';
         el.textContent = Math.round(100*total/denom)+'%';
       });
       const target = document.getElementById(unit+'-snap-history');
